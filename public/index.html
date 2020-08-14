@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            #mainSection {
+                padding: 10px;
+                border-radius: 5px;
+                background-color: #a1a1a1;
+            }
+            #mainSection>*{
+                margin:10px;
+            }
+            #intro {
+                font-size: 25px;
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+                color: #006790;
+                padding: 1%;
+                border-radius: 3px;
+                background: rgb(135,200,255);
+                background: linear-gradient(140deg, rgba(135,200,255,1) 38%, rgba(162,0,255,1) 100%);
+            }
+            .cmd {
+                background-color: #424242;
+                border-radius: 3px;
+                font: 15px Courier;
+                padding: 2px;
+                padding-left: 10px;
+                margin: 10px;
+                transition-duration: 450ms;
+            }
+            .cmd:hover {
+                transform: translateY(-3px);
+            }
+            .cmdTitleManager {
+                color:#e4e4e4 !important;
+            }
+            .descriptionManager {
+                font: 15px Arial, sans-serif !important;
+                color: white !important; 
+            }
+            .usage {
+                color: rgb(165, 165, 165);
+                font: 15px monospace;
+            }
+            .args {
+                color: rgb(0, 204, 255);
+            }
+            .brand {
+                display:flex !important;
+                justify-content: center !important;
+            }
+            #managerImg{
+                float:left;
+            }
+            #title{
+                float:right !important;
+            }
+            .separator {
+                padding: 1px;
+                background: #e4e4e4;
+                border-radius: 3px;
+            }
+            .separatorTitle {
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 12px;
+            }
+            .separatorDesc {
+                color: rgb(95, 95, 95);
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin: 12px;
+            }
+        </style>
+    </head>
+    <body>
+        <section id="mainSection">
+            <div id="intro">
+                <div class="brand">
+                    <img id="managerImg" src="https://i.imgur.com/F8r88lO.png" style="width: 64px;height: 64px;"></img>
+                    <p id="title">Manager</h1>
+                </div>
+                <h3 class="descriptionManager">This bot is for moderation.</h3>
+            </div>
+            <div class="separator">
+                <h4 class="separatorTitle">Moderation</h4>
+                <p class="separatorDesc">Moderation section.</p>
+                <div class="cmd">
+                    <h1 class="cmdTitleManager">addrole</h1>
+                    <h3 class="descriptionManager">This command adds a role to a user.</h3>
+                    <p class="usage">prefixaddrole &lt;<span class="args">user</span>&gt; &lt;<span class="args">roles</span>&gt;</p>
+                </div>
+                <div class="cmd">
+                    <h1 class="cmdTitleManager">removerole</h1>
+                    <h3 class="descriptionManager">This command removes a role from a user.</h3>
+                    <p class="usage">prefixremoverole &lt;<span class="args">user</span>&gt; &lt;<span class="args">roles</span>&gt;</p>
+                </div>
+                <div class="cmd">
+                    <h1 class="cmdTitleManager">kick</h1>
+                    <h3 class="descriptionManager">This command kicks a user.</h3>
+                    <p class="usage">prefixkick &lt;<span class="args">user</span>&gt; &lt;<span class="args">reason?</span>&gt;</p>
+                </div>
+                <div class="cmd">
+                    <h1 class="cmdTitleManager">ban</h1>
+                    <h3 class="descriptionManager">This command bans a user.</h3>
+                    <p class="usage">prefixban &lt;<span class="args">user</span>&gt; &lt;<span class="args">reason?</span>&gt;</p>
+                </div>
+                <div class="cmd">
+                    <h1 class="cmdTitleManager">unban</h1>
+                    <h3 class="descriptionManager">This command unbans a user.</h3>
+                    <p class="usage">prefixunban &lt;<span class="args">user</span>&gt;</p>
+                </div>
+                <div class="cmd">
+                    <h1 class="cmdTitleManager">delete</h1>
+                    <h3 class="descriptionManager">This command deletes messages.</h3>
+                    <p class="usage">prefixdelete &lt;<span class="args">amount</span>&gt;</p>
+                </div>
+                <div class="cmd">
+                    <h1 class="cmdTitleManager">moverole</h1>
+                    <h3 class="descriptionManager">This command moves a role to a position.</h3>
+                    <p class="usage">prefixmoverole &lt;<span class="args">position</span>&gt; &lt;<span class="args">role</span>&gt;</p>
+                </div>
+                <div class="cmd">
+                    <h1 class="cmdTitleManager">mute</h1>
+                    <h3 class="descriptionManager">This command mutes a user.</h3>
+                    <p class="usage">prefixmute &lt;<span class="args">ms</span>&gt; &lt;<span class="args">user</span>&gt;</p>
+                </div>
+                <div class="cmd">
+                    <h1 class="cmdTitleManager">unmute</h1>
+                    <h3 class="descriptionManager">This command unmutes a user.</h3>
+                    <p class="usage">prefixunmute &lt;<span class="args">user</span>&gt;</p>
+                </div>
+                <div class="cmd">
+                    <h1 class="cmdTitleManager">nsfw</h1>
+                    <h3 class="descriptionManager">This command toggles nsfw in a channel.</h3>
+                    <p class="usage">prefixnsfw</p>
+                </div>
+                <div class="cmd">
+                    <h1 class="cmdTitleManager">nick</h1>
+                    <h3 class="descriptionManager">This command changes your nickname.</h3>
+                    <p class="usage">prefixnick &lt;<span class="args">nickname</span>&gt;</p>
+                </div>
+            </div>
+            <div class="separator">
+                <h4 class="separatorTitle">useful</h4>
+                <p class="separatorDesc">Useful section.</p>
+                <div class="cmd">
+                    <h1 class="cmdTitleManager">help</h1>
+                    <h3 class="descriptionManager">This command shows the commands and can help you.</h3>
+                    <p class="usage">prefixhelp &lt;<span class="args">cmd?</span>&gt;</p>
+                </div>
+                <div class="cmd">
+                    <h1 class="cmdTitleManager">join</h1>
+                    <h3 class="descriptionManager">This command is in beta command makes bot join current channel.</h3>
+                    <p class="usage">prefixjoin</p>
+                </div>
+                <div class="cmd">
+                    <h1 class="cmdTitleManager">avatar</h1>
+                    <h3 class="descriptionManager">This command gets the user's avatar.</h3>
+                    <p class="usage">prefixavatar &lt;<span class="args">user</span>&gt;</p>
+                </div>
+                <div class="cmd">
+                    <h1 class="cmdTitleManager">announcement</h1>
+                    <h3 class="descriptionManager">This command sends an announcement.</h3>
+                    <p class="usage">prefixannouncement &lt;<span class="args">JSON</span>&gt;</p>
+                </div>
+                <div class="cmd">
+                    <h1 class="cmdTitleManager">laugh</h1>
+                    <h3 class="descriptionManager">This command makes the bot laugh.</h3>
+                    <p class="usage">prefixlaugh</p>
+                </div>
+                <div class="cmd">
+                    <h1 class="cmdTitleManager">invite</h1>
+                    <h3 class="descriptionManager">This command shows the links to invite the bot or join the Manager server.</h3>
+                    <p class="usage">prefixinvite</p>
+                </div>
+                <div class="cmd">
+                    <h1 class="cmdTitleManager">info</h1>
+                    <h3 class="descriptionManager">This command shows the info of a user.</h3>
+                    <p class="usage">prefixinfo &lt;<span class="args">user</span>&gt;</p>
+                </div>
+                <div class="cmd">
+                    <h1 class="cmdTitleManager">ms</h1>
+                    <h3 class="descriptionManager">This command converts time to ms used for mute command.</h3>
+                    <p class="usage">prefixms &lt;<span class="args">amount</span>&gt; &lt;<span class="args">unit</span>&gt;</p>
+                </div>
+                <div class="cmd">
+                    <h1 class="cmdTitleManager">rules</h1>
+                    <h3 class="descriptionManager">This command sends an embed with the specified JSON.</h3>
+                    <p class="usage">prefixrules &lt;<span class="args">JSON</span>&gt;</p>
+                </div>
+                <div class="cmd">
+                    <h1 class="cmdTitleManager">leave</h1>
+                    <h3 class="descriptionManager">This is in beta makes bot leave current channel.</h3>
+                    <p class="usage">prefixleave</p>
+                </div>
+            </div>
+            <div class="separator">
+                <h4 class="separatorTitle">Guide</h4>
+                <p class="separatorDesc">📜Guide section.</p>
+                <div class="cmd">
+                    <h1 class="cmdTitleManager">?</h1>
+                    <h3 class="descriptionManager">This means that the argument is optional</h3>
+                    <p class="usage">&lt;argument<span class="args">?</span>&gt;</p>
+                </div>
+                <div class="cmd">
+                    <h1 class="cmdTitleManager">JSON</h1>
+                    <h3 class="descriptionManager">JavaScript Object Notation can be used for rules command and announcement command here is the basic JSON for announcement and rules</h3>
+                    <p class="usage">{<br>
+                        &Tab;"description": &lt;description&gt;,<br>
+                        &Tab;"title": &lt;title&gt;,<br>
+                        &Tab;"fields": [{"name":&lt;title&gt;, "value":&lt;fieldText&gt;}],<br>
+                        &Tab;"color": &lt;colorResolvable&gt;,<br>
+                        &Tab;"url": &lt;url&gt;,<br>
+                        &Tab;"color": &lt;colorResolvable&gt;,<br>
+                        &Tab;"image": &lt;urlImage&gt;,<br>
+                    }
+                    </p>
+                    <p class="usage">Note: colorResolvable can be either rgb [R, G, B] or hex like "HEX"</p>
+                </div>
+                <div class="cmd">
+                    <h1 class="cmdTitleManager">&lt;<span class="args">argument</span>&gt;</h1>
+                    <h3 class="descriptionManager">This means that it is an argument this can also include the ? operator</h3>
+                    <p class="usage">cmd &lt;<span class="args">argument</span>&gt; &lt;<span class="args">argument?</span>&gt;</p>
+                </div>
+            </div>
+        </section>        
+    </body>
+</html>
