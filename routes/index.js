@@ -13,6 +13,12 @@ app.get('/discord', (req, res) => {
 app.get('/generator', (req, res) => {
     res.sendFile(path.join(__dirname, "..", "public", "generator.html"));
 })
+app.post('/google', (req, res) => {
+    if(!req.body.query){
+        res.send({message: "Invalid response"})
+    }
+    res.send({message: `test ${req.body.query}`});
+})
 app.use('/api', api);
 
 module.exports = app;
