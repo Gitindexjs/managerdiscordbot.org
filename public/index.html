@@ -4,82 +4,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <style>
-            #mainSection {
-                padding: 10px;
-                border-radius: 5px;
-                background-color: #a1a1a1;
-            }
-            #mainSection>*{
-                margin:10px;
-            }
-            #intro {
-                font-size: 25px;
-                font-family: Arial, Helvetica, sans-serif;
-                text-align: center;
-                color: #006790;
-                padding: 1%;
-                border-radius: 3px;
-                background: rgb(135,200,255);
-                background: linear-gradient(140deg, rgba(135,200,255,1) 38%, rgba(162,0,255,1) 100%);
-            }
-            .cmd {
-                background-color: #424242;
-                border-radius: 3px;
-                font: 15px Courier;
-                padding: 2px;
-                padding-left: 10px;
-                margin: 10px;
-                transition-duration: 450ms;
-            }
-            .cmd:hover {
-                transform: translateY(-3px);
-            }
-            .cmdTitleManager {
-                color:#e4e4e4 !important;
-            }
-            .descriptionManager {
-                font: 15px Arial, sans-serif !important;
-                color: white !important; 
-            }
-            .usage {
-                color: rgb(165, 165, 165);
-                font: 15px monospace;
-            }
-            .args {
-                color: rgb(0, 204, 255);
-            }
-            .brand {
-                display:flex !important;
-                justify-content: center !important;
-            }
-            #managerImg{
-                float:left;
-            }
-            #title{
-                float:right !important;
-            }
-            .separator {
-                padding: 1px;
-                background: #e4e4e4;
-                border-radius: 3px;
-            }
-            .separatorTitle {
-                font-family: Arial, Helvetica, sans-serif;
-                margin: 12px;
-            }
-            .separatorDesc {
-                color: rgb(95, 95, 95);
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                margin: 12px;
-            }
-        </style>
+        <link rel="stylesheet" href="stylesheet.css">
     </head>
     <body>
         <section id="mainSection">
             <div id="intro">
                 <div class="brand">
-                    <img id="managerImg" src="https://i.imgur.com/F8r88lO.png" style="width: 64px;height: 64px;"></img>
+                    <img id="managerImg" src="./ManagerLogo.png" style="width: 64px;height: 64px;"></img>
                     <p id="title">Manager</h1>
                 </div>
                 <h3 class="descriptionManager">This bot is for moderation.</h3>

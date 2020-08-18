@@ -1,0 +1,1 @@
+document.getElementById("urlPathName").innerText = window.location.pathname;
